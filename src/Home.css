@@ -1,5 +1,5 @@
 .home {
-  display: flex; /*Ky kod jep "hapsire" ne dy anet e gjithe "Home". */
+  display: flex; 
   justify-content: center;
   margin-left: auto;
   margin-right: auto;

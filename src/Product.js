@@ -20,7 +20,6 @@ function Product({ id, title, image, price, rating }) {
   };
 
   return (
-    //title,imge,price and rating quhet "PROPS".
     <div className="product">
       <div className="product__info">
         <p>{title}</p>

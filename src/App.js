@@ -12,10 +12,6 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
 
-const promise = loadStripe(
-  "pk_test_51IKOL3KKEpors3xhvPFYFj0yS0uYVP5XVerSSHxB3IFQ6w1O7Jlgu06aEwJKsta3Do8ndjdM1u4idjKOkAhf7kFN00bp8q4Tmp"
-);
-
 function App() {
   const [{}, dispatch] = useStateValue();
 
@@ -40,10 +36,6 @@ function App() {
   }, []);
 
   return (
-    //BEM(switch "App" to "app".)
-    //Router=>Ndryshim faqe dhe linku(ne URL).Very Important.
-    //Router=>You can add many "Route" as you want.
-    //Router=>NOTE:Make sure your default "Route" its at your BOTTOM.Otherwise its never get listened.
     <Router>
       <div className="app">
         <Switch>
@@ -69,8 +61,6 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        {/** Header=>Kreu,Koka(ne krye).*/}
-        {/**Home=>Body (cdo gje poshte HEADER). */}
       </div>
     </Router>
   );

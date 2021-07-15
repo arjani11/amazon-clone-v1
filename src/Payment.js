@@ -23,12 +23,9 @@ function Payment() {
   const [clientSecret, setClientSecret] = useState(true);
 
   useEffect(() => {
-    //Kodi Poshte:Very IMP Snippet(cope kodi).
-    //generate the special stripe secret which allows us to charge a customer.
     const getClientSecret = async () => {
       const response = await axios({
         method: "post",
-        //Stripe expects the total in a currencies subunits""shkurt:100".(*100:me dollaret psh.)
         url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
       });
       setClientSecret(response.data.clientSecret);
@@ -40,7 +37,6 @@ function Payment() {
   console.log("☺", user);
 
   const handleSubmit = async (event) => {
-    //do all the fancy stripe stuff.."e":event,it takes an event and does some stuffs.
     event.preventDefault(); //stops from refreshing
     setProcessing(true);
 

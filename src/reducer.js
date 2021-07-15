@@ -3,8 +3,6 @@ export const initialState = {
   user: null,
 };
 
-//Selector
-//Kodi me poshte,shkurtimi per "for loops".
 export const getBasketTotal = (basket) =>
   basket?.reduce((amount, item) => item.price + amount, 0);
 
@@ -19,8 +17,8 @@ const reducer = (state, action) => {
 
     case "EMPTY_BASKET":
       return {
-        ...state, //Keep other things inside of it.
-        basket: [], //Change basket to its original empty array.
+        ...state, 
+        basket: [], 
       };
 
     case "REMOVE_FROM_BASKET":

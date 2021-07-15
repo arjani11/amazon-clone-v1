@@ -58,7 +58,6 @@ function Header() {
       <Link to="/checkout">
         <div className="header__optionBasket">
           <ShoppingBasketIcon />{" "}
-          {/**Mund te krijojme 2 "className" duke i ndare me "hapsire" */}
           <span className="header__optionLineTwo header__baskedCount">
             {basket?.length}
           </span>

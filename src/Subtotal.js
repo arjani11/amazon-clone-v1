@@ -15,7 +15,7 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              {/**Part of homework. */}
+              
               Subtotal ({basket.length} items): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
@@ -26,9 +26,9 @@ function Subtotal() {
         )}
         decimalScale={2}
         displayType={"text"}
-        value={getBasketTotal(basket)} //part of homework
-        thousandSeperator={true} //Mbledh shumat
-        prefix={"$"} //Vendosim vleren ne dollare ose paund.
+        value={getBasketTotal(basket)} 
+        thousandSeperator={true} 
+        prefix={"$"} 
       />
 
       <button onClick={(e) => history.push("/payment")}>

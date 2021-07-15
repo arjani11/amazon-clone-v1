@@ -18,7 +18,7 @@
 .header__search {
   /*Container for EVERYTHING.*/
   display: flex;
-  flex: 1; /*Zgjat "Search" icon as big as it can go.*/
+  flex: 1; 
   align-items: center;
   border-radius: 24px;
 }
